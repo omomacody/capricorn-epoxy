@@ -35,7 +35,7 @@
         }
 
         .logo img {
-            width: 100px;
+            width: 180px;
             display: block;
             margin: 0 auto 5px;
         }
@@ -151,36 +151,74 @@
 
         /* Mobile */
 
-        @media (max-width: 800px) {
+       @media (max-width: 800px) {
 
-            body {
-                padding: 25px;
-            }
+    body {
+        padding: 20px;
+    }
 
-            nav {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 25px;
-            }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+    }
 
-            .links {
-                flex-wrap: wrap;
-                gap: 15px;
-            }
+    .logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-            .links a {
-                margin-left: 0;
-            }
+    .logo img {
+        width: 180px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
 
-            .main-title {
-                font-size: 40px;
-            }
+    .logo-name {
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
 
-            .services {
-                grid-template-columns: 1fr;
-            }
+    .logo-subtitle {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
 
-        }
+    .links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px 22px;
+        margin: 0;
+    }
+
+    .links a {
+        margin: 0;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+}
 
     </style>
 
@@ -259,6 +297,12 @@
             alt="Capricorn Epoxy Flooring"
             class="project-image"
         >
+        <img
+    src="images/group-photo.jpg"
+    alt="Capricorn Epoxy Enterprise Team"
+    class="project-image"
+>
+>
 
     </section>
 
