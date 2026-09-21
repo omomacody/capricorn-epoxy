@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Capricorn Epoxy Enterprise</title>
+
+    <style>
+
+        body {
+            background-color: #0b0712;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Navigation */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #4b1f68;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 100px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        .logo div {
+            margin-bottom: 3px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            color: #c77dff;
+        }
+
+        /* Main Title */
+
+        .main-title {
+            font-size: 52px;
+            font-weight: 700;
+            color: #c77dff;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-top: 70px;
+            font-size: 32px;
+            color: #c77dff;
+        }
+
+        h3 {
+            color: #c77dff;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Button */
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #7b2cbf;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #9d4edd;
+        }
+
+        /* Main Project Image */
+
+        .project-image {
+            width: 100%;
+            max-width: 900px;
+            height: 450px;
+            object-fit: cover;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        /* Services */
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .service {
+            background-color: #160d1f;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #4b1f68;
+            border-top: 3px solid #7b2cbf;
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #c77dff;
+        }
+
+        .service p {
+            color: #bbbbbb;
+        }
+
+        .service img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 800px) {
+
+            body {
+                padding: 25px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+            }
+
+            .links {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .links a {
+                margin-left: 0;
+            }
+
+            .main-title {
+                font-size: 40px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Capricorn Epoxy Enterprise">
+
+            <div>Capricorn Epoxy</div>
+
+            <div>Vanlalhmuaki</div>
+
+            <div>Epoxy Flooring Artist</div>
+
+        </div>
+
+
+        <div class="links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Section -->
+
+    <section>
+
+        <h1 class="main-title">
+            Capricorn Epoxy Enterprise
+        </h1>
+
+        <p>
+            Premium Epoxy Flooring & Custom Designs From Mizoram
+        </p>
+
+        <a href="contact.html" class="button">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- Home -->
+
+    <section>
+
+        <h2>Home</h2>
+
+        <p>
+            We create durable, beautiful, and creative epoxy flooring
+            solutions for homes, businesses, and commercial spaces.
+        </p>
+
+        <img
+            src="images/floor.jpg"
+            alt="Capricorn Epoxy Flooring"
+            class="project-image"
+        >
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section>
+
+        <h2>Our Projects</h2>
+
+        <p>
+            Explore our completed epoxy flooring projects and
+            custom designs.
+        </p>
+
+        <a href="projects.html" class="button">
+            View All Projects
+        </a>
+
+    </section>
+
+
+    <!-- Services -->
+
+    <section>
+
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+
+            <!-- Epoxy Flooring -->
+
+            <div class="service">
+
+                <h3>Epoxy Flooring</h3>
+
+                <img
+                    src="images/epoxy-flooring.jpg"
+                    alt="Epoxy Flooring"
+                >
+
+                <p>
+                    Durable and beautiful epoxy flooring
+                    for homes and commercial spaces.
+                </p>
+
+            </div>
+
+
+            <!-- 3D Epoxy -->
+
+            <div class="service">
+
+                <h3>3D Epoxy</h3>
+
+                <img
+                    src="images/3d-epoxy.jpg"
+                    alt="3D Epoxy Flooring"
+                >
+
+                <p>
+                    Creative 3D epoxy flooring designs
+                    that transform your space.
+                </p>
+
+            </div>
+
+
+            <!-- Sand Color Flooring -->
+
+            <div class="service">
+
+                <h3>Sand Color Flooring</h3>
+
+                <img
+                    src="images/sand-color.jpg"
+                    alt="Sand Color Flooring"
+                >
+
+                <p>
+                    Elegant sand-color finishes with
+                    a clean and natural appearance.
+                </p>
+
+            </div>
+
+
+            <!-- Custom Designs -->
+
+            <div class="service">
+
+                <h3>Custom Designs</h3>
+
+                <img
+                    src="images/custom-design.jpg"
+                    alt="Custom Epoxy Designs"
+                >
+
+                <p>
+                    Custom flooring designs created
+                    according to your space.
+                </p>
+
+            </div>
+
+
+            <!-- Waterproofing -->
+
+            <div class="service">
+
+                <h3>Waterproofing with Primer</h3>
+
+                <img
+                    src="images/waterproofing.jpg"
+                    alt="Waterproofing with Primer"
+                >
+
+                <p>
+                    Professional waterproofing with primer
+                    to help protect surfaces from moisture
+                    and water damage.
+                </p>
+
+            </div>
+
+
+            <!-- Furniture Top Coat -->
+
+            <div class="service">
+
+                <h3>Epoxy Furniture Top Coat</h3>
+
+                <img
+                    src="images/epoxy-furniture.jpg"
+                    alt="Epoxy Furniture Top Coat"
+                >
+
+                <p>
+                    Durable epoxy top coats for furniture,
+                    providing a smooth, glossy, and
+                    protective finish.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section>
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Get in touch with Capricorn Epoxy Enterprise
+            for your flooring project.
+        </p>
+
+    </section>
+
+
+</body>
+
+</html>

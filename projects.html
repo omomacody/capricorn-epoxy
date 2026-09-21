@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Projects - Capricorn Epoxy Enterprise</title>
+
+    <style>
+
+        body {
+            background-color: #0b0712;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        nav {
+            margin-bottom: 50px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #4b1f68;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+
+        nav a:hover {
+            color: #c77dff;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #c77dff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #bbbbbb;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid #4b1f68;
+        }
+
+        .gallery img:hover {
+            border-color: #c77dff;
+        }
+
+        @media (max-width: 900px) {
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+        }.projects-intro {
+    max-width: 700px;
+    color: #bbbbbb;
+    margin-top: 10px;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <h1>Our Projects</h1>
+
+
+    <p class="projects-intro">
+    Explore some of our completed epoxy flooring projects,
+    featuring different styles, colors, and custom designs. These projects showcase our real works and the quality of our craftsmanship.
+
+</p>
+
+
+    <div class="gallery">
+    </div>
+
+
+    <script>
+
+        for (let i = 1; i <= 40; i++) {
+
+            let image = document.createElement("img");
+
+            image.src = "images/project" + i + ".jpg";
+
+            image.alt = "Capricorn Epoxy Project " + i;
+
+            image.onclick = function() {
+                window.open(this.src, "_blank");
+            };
+
+            document.querySelector(".gallery").appendChild(image);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
