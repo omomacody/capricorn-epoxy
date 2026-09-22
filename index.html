@@ -4,11 +4,16 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Capricorn Epoxy Enterprise</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             background-color: #0b0712;
@@ -18,7 +23,10 @@
             margin: 0;
         }
 
-        /* Navigation */
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             display: flex;
@@ -61,7 +69,10 @@
             color: #c77dff;
         }
 
-        /* Main Title */
+
+        /* =========================
+           MAIN TITLE
+        ========================= */
 
         .main-title {
             font-size: 52px;
@@ -86,7 +97,10 @@
             line-height: 1.7;
         }
 
-        /* Button */
+
+        /* =========================
+           BUTTON
+        ========================= */
 
         .button {
             display: inline-block;
@@ -103,18 +117,61 @@
             background-color: #9d4edd;
         }
 
-        /* Main Project Image */
 
-        .project-image {
+        /* =========================
+           MEDIA SECTION
+        ========================= */
+
+        .media-section {
             width: 100%;
-            max-width: 900px;
-            height: 450px;
-            object-fit: cover;
-            margin-top: 30px;
-            border-radius: 10px;
+            max-width: 1000px;
+            margin: 30px auto;
         }
 
-        /* Services */
+
+        /* PORTRAIT VIDEO */
+
+        .portrait-video {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: none;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 25px auto;
+            background-color: #000000;
+            border-radius: 8px;
+        }
+
+
+        /* LANDSCAPE VIDEO */
+
+        .landscape-video {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px auto;
+            object-fit: contain;
+            background-color: #000000;
+            border-radius: 8px;
+        }
+
+
+        /* GROUP PHOTO */
+
+        .group-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px auto;
+            border-radius: 8px;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
 
         .services {
             display: grid;
@@ -149,82 +206,93 @@
             margin: 15px 0;
         }
 
-        /* Mobile */
 
-       @media (max-width: 800px) {
+        /* =========================
+           MOBILE
+        ========================= */
 
-    body {
-        padding: 20px;
-    }
+        @media (max-width: 800px) {
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 30px;
-        width: 100%;
-    }
+            body {
+                padding: 20px;
+            }
 
-    .logo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 30px;
+                width: 100%;
+            }
 
-    .logo img {
-        width: 180px;
-        height: auto;
-        display: block;
-        margin: 0 auto 10px auto;
-    }
+            .logo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
 
-    .logo-name {
-        width: 100%;
-        text-align: center;
-        font-size: 22px;
-    }
+            .logo img {
+                width: 180px;
+                height: auto;
+                display: block;
+                margin: 0 auto 10px auto;
+            }
 
-    .logo-subtitle {
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-    }
+            .logo div {
+                width: 100%;
+                text-align: center;
+            }
 
-    .links {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 15px 22px;
-        margin: 0;
-    }
+            .links {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 15px 22px;
+                margin: 0;
+            }
 
-    .links a {
-        margin: 0;
-        text-align: center;
-    }
+            .links a {
+                margin: 0;
+                text-align: center;
+            }
 
-    .main-title {
-        font-size: 40px;
-    }
+            .main-title {
+                font-size: 40px;
+            }
 
-    .services {
-        grid-template-columns: 1fr;
-    }
+            .services {
+                grid-template-columns: 1fr;
+            }
 
-}.project-video {
-    width: 100%;
-    max-width: 1000px;
-    display: block;
-    margin: 30px auto;
-    border-radius: 8px;
-}
+            .media-section {
+                width: 100%;
+            }
+
+            .portrait-video {
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                max-height: none;
+            }
+
+            .landscape-video {
+                width: 100%;
+                height: auto;
+            }
+
+            .group-photo {
+                width: 100%;
+                height: auto;
+            }
+
+        }
 
     </style>
 
@@ -234,19 +302,30 @@
 <body>
 
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
 
     <nav>
 
         <div class="logo">
 
-            <img src="images/logo.png" alt="Capricorn Epoxy Enterprise">
+            <img
+                src="images/logo.png"
+                alt="Capricorn Epoxy Enterprise"
+            >
 
-            <div>Capricorn Epoxy</div>
+            <div>
+                Capricorn Epoxy
+            </div>
 
-            <div>Vanlalhmuaki</div>
+            <div>
+                Vanlalhmuaki
+            </div>
 
-            <div>Epoxy Flooring Artist</div>
+            <div>
+                Epoxy Flooring Artist
+            </div>
 
         </div>
 
@@ -268,7 +347,10 @@
     </nav>
 
 
-    <!-- Main Section -->
+
+    <!-- =========================
+         MAIN SECTION
+    ========================= -->
 
     <section>
 
@@ -280,71 +362,139 @@
             Premium Epoxy Flooring & Custom Designs From Mizoram
         </p>
 
-        <a href="contact.html" class="button">
+        <a
+            href="contact.html"
+            class="button"
+        >
             Contact Us
         </a>
 
     </section>
 
 
-    <!-- Home -->
+
+    <!-- =========================
+         HOME
+    ========================= -->
 
     <section>
 
-        <h2>Home</h2>
+        <h2>
+            Home
+        </h2>
 
         <p>
             We create durable, beautiful, and creative epoxy flooring
             solutions for homes, businesses, and commercial spaces.
         </p>
-<video controls autoplay muted loop playsinline class="project-video">
-    <source src="images/video2.mp4" type="video/mp4">
-</video>
-        <video controls autoplay muted loop playsinline class="project-video">
-    <source src="images/video.mp4" type="video/mp4">
-</video>
-        <img
-    src="images/group-photo.jpg"
-    alt="Capricorn Epoxy Enterprise Team"
-    class="project-image"
->
->
+
+
+        <div class="media-section">
+
+
+            <!-- VIDEO 2 - PORTRAIT -->
+
+            <video
+                class="portrait-video"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+
+                <source
+                    src="images/video2.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video playback.
+
+            </video>
+
+
+            <!-- VIDEO 1 - LANDSCAPE -->
+
+            <video
+                class="landscape-video"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+
+                <source
+                    src="images/video.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video playback.
+
+            </video>
+
+
+            <!-- GROUP PHOTO -->
+
+            <img
+                class="group-photo"
+                src="images/group-photo.jpg"
+                alt="Capricorn Epoxy Enterprise Team"
+            >
+
+
+        </div>
 
     </section>
 
 
-    <!-- Projects -->
+
+    <!-- =========================
+         PROJECTS
+    ========================= -->
 
     <section>
 
-        <h2>Our Projects</h2>
+        <h2>
+            Our Projects
+        </h2>
 
         <p>
             Explore our completed epoxy flooring projects and
             custom designs.
         </p>
 
-        <a href="projects.html" class="button">
+        <a
+            href="projects.html"
+            class="button"
+        >
             View All Projects
         </a>
 
     </section>
 
 
-    <!-- Services -->
+
+    <!-- =========================
+         SERVICES
+    ========================= -->
 
     <section>
 
-        <h2>Our Services</h2>
+        <h2>
+            Our Services
+        </h2>
 
         <div class="services">
 
 
-            <!-- Epoxy Flooring -->
+            <!-- EPOXY FLOORING -->
 
             <div class="service">
 
-                <h3>Epoxy Flooring</h3>
+                <h3>
+                    Epoxy Flooring
+                </h3>
 
                 <img
                     src="images/epoxy-flooring.jpg"
@@ -359,11 +509,13 @@
             </div>
 
 
-            <!-- 3D Epoxy -->
+            <!-- 3D EPOXY -->
 
             <div class="service">
 
-                <h3>3D Epoxy</h3>
+                <h3>
+                    3D Epoxy
+                </h3>
 
                 <img
                     src="images/3d-epoxy.jpg"
@@ -378,11 +530,13 @@
             </div>
 
 
-            <!-- Sand Color Flooring -->
+            <!-- SAND COLOR -->
 
             <div class="service">
 
-                <h3>Sand Color Flooring</h3>
+                <h3>
+                    Sand Color Flooring
+                </h3>
 
                 <img
                     src="images/sand-color.jpg"
@@ -397,11 +551,13 @@
             </div>
 
 
-            <!-- Custom Designs -->
+            <!-- CUSTOM DESIGNS -->
 
             <div class="service">
 
-                <h3>Custom Designs</h3>
+                <h3>
+                    Custom Designs
+                </h3>
 
                 <img
                     src="images/custom-design.jpg"
@@ -416,11 +572,13 @@
             </div>
 
 
-            <!-- Waterproofing -->
+            <!-- WATERPROOFING -->
 
             <div class="service">
 
-                <h3>Waterproofing with Primer</h3>
+                <h3>
+                    Waterproofing with Primer
+                </h3>
 
                 <img
                     src="images/waterproofing.jpg"
@@ -436,11 +594,13 @@
             </div>
 
 
-            <!-- Furniture Top Coat -->
+            <!-- FURNITURE TOP COAT -->
 
             <div class="service">
 
-                <h3>Epoxy Furniture Top Coat</h3>
+                <h3>
+                    Epoxy Furniture Top Coat
+                </h3>
 
                 <img
                     src="images/epoxy-furniture.jpg"
@@ -461,11 +621,16 @@
     </section>
 
 
-    <!-- Contact -->
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
     <section>
 
-        <h2>Contact Us</h2>
+        <h2>
+            Kan site min lo tlawh avangin kan lawm e
+        </h2>
 
         <p>
             Get in touch with Capricorn Epoxy Enterprise
