@@ -45,7 +45,7 @@
         .logo img {
             width: 180px;
             display: block;
-            margin: 0 auto 5px;
+            margin: 0 auto 8px;
         }
 
         .logo div {
@@ -55,13 +55,14 @@
         .links {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .links a {
             color: white;
             text-decoration: none;
-            margin-left: 30px;
-            font-size: 18px;
+            margin-left: 25px;
+            font-size: 17px;
             font-weight: 500;
         }
 
@@ -99,7 +100,7 @@
 
 
         /* =========================
-           BUTTON
+           BUTTONS
         ========================= */
 
         .button {
@@ -117,55 +118,82 @@
             background-color: #9d4edd;
         }
 
+        .whatsapp-button {
+            background-color: #25D366;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #20b957;
+        }
+
 
         /* =========================
-           MEDIA SECTION
+           HOMEPAGE MEDIA
         ========================= */
 
         .media-section {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .media-section video {
+            width: 100%;
+            display: block;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            background-color: #000;
+        }
+
+        /* First video */
+        .media-section .video1 {
+            max-height: 600px;
+            object-fit: contain;
+        }
+
+        /* Second video - keep full portrait frame */
+        .media-section .video2 {
+            max-height: 750px;
+            object-fit: contain;
+        }
+
+        /* Group photo on last row */
+        .media-section img {
             width: 100%;
             max-width: 1000px;
-            margin: 30px auto;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
         }
 
 
-        /* PORTRAIT VIDEO */
+        /* =========================
+           WHY CHOOSE US
+        ========================= */
 
-        .portrait-video {
-            width: auto;
-            max-width: 100%;
-            height: auto;
-            max-height: none;
-            object-fit: contain;
-            display: block;
-            margin: 0 auto 25px auto;
-            background-color: #000000;
-            border-radius: 8px;
+        .why-us {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
         }
 
-
-        /* LANDSCAPE VIDEO */
-
-        .landscape-video {
-            width: 100%;
-            max-width: 1000px;
-            height: auto;
-            display: block;
-            margin: 0 auto 25px auto;
-            object-fit: contain;
-            background-color: #000000;
+        .why-card {
+            background-color: #160d1f;
+            padding: 25px;
             border-radius: 8px;
+            border: 1px solid #4b1f68;
+            border-top: 3px solid #7b2cbf;
         }
 
+        .why-card h3 {
+            margin-top: 0;
+            font-size: 21px;
+        }
 
-        /* GROUP PHOTO */
-
-        .group-photo {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 25px auto;
-            border-radius: 8px;
+        .why-card p {
+            color: #bbbbbb;
+            font-size: 16px;
         }
 
 
@@ -208,6 +236,104 @@
 
 
         /* =========================
+           FLOORING RATE SECTION
+        ========================= */
+
+        .rate-section {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-left: 4px solid #7b2cbf;
+            border-radius: 8px;
+            padding: 35px;
+            margin-top: 30px;
+        }
+
+        .rate-section h3 {
+            margin-top: 0;
+            font-size: 25px;
+        }
+
+        .rate-section p {
+            color: #cccccc;
+        }
+
+
+        /* =========================
+           EPOXY CLASS
+        ========================= */
+
+        .class-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .class-card {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .class-card h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .class-card .price {
+            color: white;
+            font-size: 27px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .class-card ul {
+            color: #bbbbbb;
+            line-height: 1.9;
+            padding-left: 22px;
+        }
+
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .project-box {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-box {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            border-top: 1px solid #4b1f68;
+            margin-top: 80px;
+            padding-top: 30px;
+            text-align: center;
+            color: #999999;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
            MOBILE
         ========================= */
 
@@ -218,7 +344,6 @@
             }
 
             nav {
-                display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -232,20 +357,10 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                text-align: center;
             }
 
             .logo img {
                 width: 180px;
-                height: auto;
-                display: block;
-                margin: 0 auto 10px auto;
-            }
-
-            .logo div {
-                width: 100%;
-                text-align: center;
             }
 
             .links {
@@ -254,8 +369,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                gap: 15px 22px;
-                margin: 0;
+                gap: 15px 20px;
             }
 
             .links a {
@@ -267,29 +381,20 @@
                 font-size: 40px;
             }
 
+            .why-us {
+                grid-template-columns: 1fr;
+            }
+
             .services {
                 grid-template-columns: 1fr;
             }
 
+            .class-section {
+                grid-template-columns: 1fr;
+            }
+
             .media-section {
-                width: 100%;
-            }
-
-            .portrait-video {
-                width: auto;
-                max-width: 100%;
-                height: auto;
-                max-height: none;
-            }
-
-            .landscape-video {
-                width: 100%;
-                height: auto;
-            }
-
-            .group-photo {
-                width: 100%;
-                height: auto;
+                margin-top: 30px;
             }
 
         }
@@ -315,36 +420,37 @@
                 alt="Capricorn Epoxy Enterprise"
             >
 
-            <div>
-                Capricorn Epoxy
-            </div>
-
-            <div>
-                Vanlalhmuaki
-            </div>
-
-            <div>
-                Epoxy Flooring Artist
-            </div>
+            <div>Capricorn Epoxy</div>
+            <div>Vanlalhmuaki</div>
+            <div>Epoxy Flooring Artist</div>
 
         </div>
 
 
-       <div class="links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="epoxy-class.html">Epoxy Class</a>
-    <a href="contact.html">Contact</a>
-</div>
+        <div class="links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="flooring-rate.html">Flooring Rates</a>
+
+            <a href="epoxy-class.html">Epoxy Class</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
 
     </nav>
 
 
 
     <!-- =========================
-         MAIN SECTION
+         HERO SECTION
     ========================= -->
 
     <section>
@@ -357,11 +463,24 @@
             Premium Epoxy Flooring & Custom Designs From Mizoram
         </p>
 
+        <p>
+            Professional epoxy flooring, creative designs,
+            furniture coating, waterproofing, and practical
+            epoxy training.
+        </p>
+
         <a
             href="contact.html"
             class="button"
         >
             Contact Us
+        </a>
+
+        <a
+            href="flooring-rate.html"
+            class="button"
+        >
+            Get Flooring Rate
         </a>
 
     </section>
@@ -379,39 +498,27 @@
         </h2>
 
         <p>
-            We create durable, beautiful, and creative epoxy flooring
-            solutions for homes, businesses, and commercial spaces.
+            We create durable, beautiful, and creative epoxy
+            flooring solutions for homes, businesses,
+            commercial spaces, and custom projects.
         </p>
 
+        <p>
+            Our team works with different epoxy systems,
+            designs, finishes, and surface requirements to
+            create flooring solutions according to each project.
+        </p>
+
+
+        <!-- HOMEPAGE MEDIA -->
 
         <div class="media-section">
 
 
-            <!-- VIDEO 2 - PORTRAIT -->
+            <!-- VIDEO 1 -->
 
             <video
-                class="portrait-video"
-                controls
-                autoplay
-                muted
-                loop
-                playsinline
-            >
-
-                <source
-                    src="images/video2.mp4"
-                    type="video/mp4"
-                >
-
-                Your browser does not support video playback.
-
-            </video>
-
-
-            <!-- VIDEO 1 - LANDSCAPE -->
-
-            <video
-                class="landscape-video"
+                class="video1"
                 controls
                 autoplay
                 muted
@@ -429,14 +536,35 @@
             </video>
 
 
-            <!-- GROUP PHOTO -->
+
+            <!-- VIDEO 2 -->
+
+            <video
+                class="video2"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+
+                <source
+                    src="images/video2.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video playback.
+
+            </video>
+
+
+
+            <!-- GROUP PHOTO - LAST -->
 
             <img
-                class="group-photo"
                 src="images/group-photo.jpg"
                 alt="Capricorn Epoxy Enterprise Team"
             >
-
 
         </div>
 
@@ -445,7 +573,295 @@
 
 
     <!-- =========================
-         PROJECTS
+         WHY CHOOSE US
+    ========================= -->
+
+    <section>
+
+        <h2>
+            Why Choose Capricorn Epoxy?
+        </h2>
+
+        <div class="why-us">
+
+
+            <div class="why-card">
+
+                <h3>
+                    Professional Epoxy Flooring
+                </h3>
+
+                <p>
+                    We provide professional epoxy flooring
+                    solutions for residential, commercial,
+                    and other spaces.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Custom Designs
+                </h3>
+
+                <p>
+                    We create custom epoxy designs and finishes
+                    according to the requirements of each project.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Real Field Experience
+                </h3>
+
+                <p>
+                    Our work experience includes projects
+                    inside Mizoram and projects outside Mizoram,
+                    including Nagaland, Silchar, and Myanmar.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Detailed Floor Assessment
+                </h3>
+
+                <p>
+                    Customers can send a vertical 9:16 floor
+                    video through WhatsApp so our team can
+                    analyse the project before discussing the rate.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Project-Specific Pricing
+                </h3>
+
+                <p>
+                    We do not use a fixed per-square-foot price.
+                    Each project is assessed according to its
+                    actual requirements.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Practical Training
+                </h3>
+
+                <p>
+                    Our epoxy training includes practical and
+                    theory sessions, with real field experience
+                    when suitable projects are available.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FLOORING RATE
+    ========================= -->
+
+    <section>
+
+        <h2>
+            Get Your Flooring Rate
+        </h2>
+
+        <div class="rate-section">
+
+            <h3>
+                📹 Send Us Your Floor Video
+            </h3>
+
+            <p>
+                We do not provide a fixed per-square-foot rate.
+                Every floor is different and requires individual
+                assessment.
+            </p>
+
+            <p>
+                Send us a clear vertical 9:16 video of your
+                floor. Provide your project details and continue
+                to WhatsApp.
+            </p>
+
+            <p>
+                Our team will analyse the footage and contact
+                you regarding your project.
+            </p>
+
+            <a
+                href="flooring-rate.html"
+                class="button"
+            >
+                View Flooring Rates
+            </a>
+
+            <a
+                href="floor.html"
+                class="button whatsapp-button"
+            >
+                💬 Send Floor Video
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         EPOXY CLASS
+    ========================= -->
+
+    <section>
+
+        <h2>
+            Epoxy Flooring Training
+        </h2>
+
+        <p>
+            Learn epoxy flooring through theory, practical
+            training, and real field experience.
+        </p>
+
+        <div class="class-section">
+
+
+            <!-- ONE MONTH -->
+
+            <div class="class-card">
+
+                <h3>
+                    One Month Course
+                </h3>
+
+                <div class="price">
+                    ₹80,000
+                </div>
+
+                <ul>
+
+                    <li>
+                        Epoxy Flooring
+                    </li>
+
+                    <li>
+                        Epoxy Furniture
+                    </li>
+
+                    <li>
+                        Epoxy Art
+                    </li>
+
+                    <li>
+                        Theory and Practical Training
+                    </li>
+
+                    <li>
+                        Accommodation included
+                    </li>
+
+                    <li>
+                        Food included
+                    </li>
+
+                    <li>
+                        Travel package included
+                    </li>
+
+                    <li>
+                        Real field work experience
+                        when projects are available
+                    </li>
+
+                    <li>
+                        Field experience in different
+                        parts of Mizoram and outside Mizoram
+                        when suitable work is available
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- ONE WEEK -->
+
+            <div class="class-card">
+
+                <h3>
+                    One Week Course
+                </h3>
+
+                <div class="price">
+                    ₹30,000
+                </div>
+
+                <ul>
+
+                    <li>
+                        Theory Training
+                    </li>
+
+                    <li>
+                        Practical Training
+                    </li>
+
+                    <li>
+                        Hands-on epoxy experience
+                    </li>
+
+                    <li>
+                        Opportunity for real field work
+                        inside Aizawl or nearby when work
+                        is available
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="epoxy-class.html"
+            class="button"
+        >
+            Learn More About Epoxy Class
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         OUR PROJECTS
     ========================= -->
 
     <section>
@@ -454,17 +870,28 @@
             Our Projects
         </h2>
 
-        <p>
-            Explore our completed epoxy flooring projects and
-            custom designs.
-        </p>
+        <div class="project-box">
 
-        <a
-            href="projects.html"
-            class="button"
-        >
-            View All Projects
-        </a>
+            <p>
+                Explore our completed epoxy flooring projects,
+                custom designs, furniture work, and other
+                epoxy applications.
+            </p>
+
+            <p>
+                We have completed projects in Mizoram and
+                outside Mizoram, depending on project
+                requirements and availability.
+            </p>
+
+            <a
+                href="projects.html"
+                class="button"
+            >
+                View Our Projects
+            </a>
+
+        </div>
 
     </section>
 
@@ -504,6 +931,7 @@
             </div>
 
 
+
             <!-- 3D EPOXY -->
 
             <div class="service">
@@ -523,6 +951,7 @@
                 </p>
 
             </div>
+
 
 
             <!-- SAND COLOR -->
@@ -546,6 +975,7 @@
             </div>
 
 
+
             <!-- CUSTOM DESIGNS -->
 
             <div class="service">
@@ -565,6 +995,7 @@
                 </p>
 
             </div>
+
 
 
             <!-- WATERPROOFING -->
@@ -589,7 +1020,8 @@
             </div>
 
 
-            <!-- FURNITURE TOP COAT -->
+
+            <!-- FURNITURE -->
 
             <div class="service">
 
@@ -624,15 +1056,50 @@
     <section>
 
         <h2>
-            Kan site min lo tlawh avangin kan lawm e
+            Contact Us
         </h2>
 
-        <p>
-            Get in touch with Capricorn Epoxy Enterprise
-            for your flooring project.
-        </p>
+        <div class="contact-box">
+
+            <p>
+                Get in touch with Capricorn Epoxy Enterprise
+                for your flooring project, custom epoxy design,
+                or epoxy training.
+            </p>
+
+            <a
+                href="contact.html"
+                class="button"
+            >
+                Contact Us
+            </a>
+
+        </div>
 
     </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <strong>
+            Capricorn Epoxy Enterprise
+        </strong>
+
+        <br>
+
+        Professional Epoxy Flooring & Custom Designs
+
+        <br><br>
+
+        © 2026 Capricorn Epoxy Enterprise.
+        All rights reserved.
+
+    </footer>
 
 
 </body>
