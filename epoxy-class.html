@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Epoxy Flooring Training | Capricorn Epoxy Enterprise</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0712;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #4b1f68;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 180px;
+            display: block;
+            margin: 0 auto 8px;
+        }
+
+        .logo div {
+            margin-bottom: 3px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        .links a:hover {
+            color: #c77dff;
+        }
+
+
+        /* =========================
+           PAGE TITLE
+        ========================= */
+
+        .page-title {
+            text-align: center;
+            color: #c77dff;
+            font-size: 45px;
+            margin-top: 60px;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 50px;
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           COURSE CARDS
+        ========================= */
+
+        .courses {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto 50px;
+        }
+
+        .course {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-top: 4px solid #7b2cbf;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .course h2 {
+            color: #c77dff;
+            margin-top: 0;
+            font-size: 27px;
+            line-height: 1.3;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            margin: 15px 0 25px;
+        }
+
+        .course ul {
+            padding-left: 22px;
+            line-height: 1.9;
+            color: #dddddd;
+        }
+
+        .course li {
+            margin-bottom: 5px;
+        }
+
+        .note {
+            color: #bbbbbb;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+
+        /* =========================
+           APPLICATION AREA
+        ========================= */
+
+        .application {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 10px;
+            padding: 40px 35px;
+            text-align: center;
+        }
+
+        .application h2 {
+            color: #c77dff;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .application p {
+            color: #cccccc;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+
+        /* =========================
+           APPLY BUTTON
+        ========================= */
+
+        .apply-button {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            margin: 30px auto 0;
+            padding: 16px 25px;
+            background-color: #7b2cbf;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .apply-button:hover {
+            background-color: #9d4edd;
+        }
+
+
+        /* =========================
+           IMPORTANT INFORMATION
+        ========================= */
+
+        .important {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            background-color: #0f0917;
+            border-left: 3px solid #7b2cbf;
+            padding: 25px;
+        }
+
+        .important h3 {
+            color: #c77dff;
+            margin-top: 0;
+        }
+
+        .important p {
+            color: #cccccc;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #4b1f68;
+            padding-top: 30px;
+            color: #999999;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            body {
+                padding: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .logo {
+                width: 100%;
+            }
+
+            .logo img {
+                width: 180px;
+            }
+
+            .links {
+                justify-content: center;
+                gap: 15px 20px;
+            }
+
+            .links a {
+                margin-left: 0;
+                font-size: 17px;
+            }
+
+            .page-title {
+                font-size: 34px;
+                margin-top: 40px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .courses {
+                grid-template-columns: 1fr;
+            }
+
+            .course {
+                padding: 25px;
+            }
+
+            .application {
+                padding: 30px 20px;
+            }
+
+            .application h2 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img
+                src="images/logo.png"
+                alt="Capricorn Epoxy Enterprise"
+            >
+
+            <div>
+                Capricorn Epoxy
+            </div>
+
+            <div>
+                Vanlalhmuaki
+            </div>
+
+            <div>
+                Epoxy Flooring Artist
+            </div>
+
+        </div>
+
+
+        <div class="links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         PAGE INTRO
+    ========================= -->
+
+    <h1 class="page-title">
+        Epoxy Flooring Training Program
+    </h1>
+
+    <p class="intro">
+        Learn professional epoxy flooring, epoxy furniture, and
+        epoxy art through theory, practical training, and real
+        field-work experience with Capricorn Epoxy Enterprise.
+    </p>
+
+
+
+    <!-- =========================
+         COURSE CARDS
+    ========================= -->
+
+    <div class="courses">
+
+
+        <!-- ONE MONTH COURSE -->
+
+        <div class="course">
+
+            <h2>
+                One-Month Professional Course
+            </h2>
+
+            <div class="price">
+                ₹80,000
+            </div>
+
+            <ul>
+
+                <li>
+                    One month professional training
+                </li>
+
+                <li>
+                    Epoxy flooring
+                </li>
+
+                <li>
+                    Epoxy furniture
+                </li>
+
+                <li>
+                    Epoxy art
+                </li>
+
+                <li>
+                    Theory and practical training
+                </li>
+
+                <li>
+                    Hands-on practical experience
+                </li>
+
+                <li>
+                    Accommodation included
+                </li>
+
+                <li>
+                    Food included
+                </li>
+
+                <li>
+                    Travel package included
+                </li>
+
+                <li>
+                    Real field-work experience in different
+                    parts of Mizoram
+                </li>
+
+                <li>
+                    Opportunity for field work outside Mizoram
+                    when projects are available
+                </li>
+
+            </ul>
+
+            <p class="note">
+                Outside-Mizoram field work depends on the
+                availability and schedule of actual projects.
+            </p>
+
+        </div>
+
+
+
+        <!-- ONE WEEK COURSE -->
+
+        <div class="course">
+
+            <h2>
+                One-Week Practical Course
+            </h2>
+
+            <div class="price">
+                ₹30,000
+            </div>
+
+            <ul>
+
+                <li>
+                    One week intensive training
+                </li>
+
+                <li>
+                    Epoxy flooring fundamentals
+                </li>
+
+                <li>
+                    Theory training
+                </li>
+
+                <li>
+                    Practical training
+                </li>
+
+                <li>
+                    Hands-on experience
+                </li>
+
+                <li>
+                    Opportunity for real field work in
+                    Aizawl or nearby areas
+                </li>
+
+            </ul>
+
+            <p class="note">
+                Real field-work participation depends on the
+                availability of a suitable project during
+                the training period.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         APPLICATION
+    ========================= -->
+
+    <div class="application">
+
+        <h2>
+            Online Application
+        </h2>
+
+        <p>
+            Ready to join our Epoxy Flooring Training Program?
+            Click the button below to complete your application.
+            Please provide accurate personal information and
+            select your desired course in the application form.
+        </p>
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdau7Jy7U87PgZdtiZ4Bcu22dWUee1j1HysB910XyAID6ofEw/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="apply-button"
+        >
+            Apply Now
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         IMPORTANT INFORMATION
+    ========================= -->
+
+    <div class="important">
+
+        <h3>
+            Important Information
+        </h3>
+
+        <p>
+            Submission of the application form does not
+            automatically confirm admission. Applications will
+            be reviewed by Capricorn Epoxy Enterprise, and
+            applicants will be contacted regarding their course,
+            training schedule, and further arrangements.
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <strong>
+            Capricorn Epoxy Enterprise
+        </strong>
+
+        <br>
+
+        Professional Epoxy Flooring & Training
+
+        <br><br>
+
+        © 2026 Capricorn Epoxy Enterprise. All rights reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
