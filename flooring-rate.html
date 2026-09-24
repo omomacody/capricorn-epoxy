@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flooring Rates | Capricorn Epoxy Enterprise</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0712;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #4b1f68;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 180px;
+            display: block;
+            margin: 0 auto 8px;
+        }
+
+        .logo div {
+            margin-bottom: 3px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        .links a:hover {
+            color: #c77dff;
+        }
+
+
+        /* =========================
+           PAGE HEADER
+        ========================= */
+
+        .page-header {
+            text-align: center;
+            max-width: 900px;
+            margin: 60px auto 35px;
+        }
+
+        .page-header h1 {
+            color: #c77dff;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .page-header p {
+            color: #cccccc;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .video-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 17px 35px;
+            background-color: #7b2cbf;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 19px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .video-button:hover {
+            background-color: #9d4edd;
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .section {
+            max-width: 1000px;
+            margin: 0 auto 60px;
+        }
+
+        .section h2 {
+            color: #c77dff;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           NO FIXED RATE
+        ========================= */
+
+        .notice {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-left: 4px solid #7b2cbf;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .notice h2 {
+            margin-top: 0;
+        }
+
+        .notice strong {
+            color: white;
+        }
+
+
+        /* =========================
+           STEPS
+        ========================= */
+
+        .steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .step-number {
+            color: #c77dff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .step h3 {
+            color: white;
+            margin: 5px 0 10px;
+            font-size: 21px;
+        }
+
+        .step p {
+            font-size: 16px;
+            margin: 0;
+            color: #bbbbbb;
+        }
+
+
+        /* =========================
+           WHAT WE CONSIDER
+        ========================= */
+
+        .consider-list {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .consider-list ul {
+            margin: 0;
+            padding-left: 25px;
+            color: #cccccc;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           VIDEO INSTRUCTIONS
+        ========================= */
+
+        .video-box {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .video-box ul {
+            padding-left: 25px;
+            color: #cccccc;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        .video-warning {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #0b0712;
+            border-left: 3px solid #7b2cbf;
+            color: #cccccc;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           WHY VIDEO
+        ========================= */
+
+        .why-video {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .reason {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 20px;
+            color: #cccccc;
+        }
+
+
+        /* =========================
+           PROCESS
+        ========================= */
+
+        .process {
+            background-color: #160d1f;
+            border: 1px solid #4b1f68;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .process-item {
+            padding: 18px 0;
+            border-bottom: 1px solid #302039;
+        }
+
+        .process-item:last-child {
+            border-bottom: none;
+        }
+
+        .process-item strong {
+            color: #c77dff;
+            display: block;
+            margin-bottom: 7px;
+            font-size: 18px;
+        }
+
+        .process-item span {
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           FINAL NOTE
+        ========================= */
+
+        .final-note {
+            max-width: 900px;
+            margin: 0 auto 70px;
+            text-align: center;
+            color: #aaaaaa;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            border-top: 1px solid #4b1f68;
+            padding-top: 30px;
+            text-align: center;
+            color: #999999;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            body {
+                padding: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .logo {
+                width: 100%;
+            }
+
+            .logo img {
+                width: 180px;
+            }
+
+            .links {
+                justify-content: center;
+                gap: 15px 20px;
+            }
+
+            .links a {
+                margin-left: 0;
+                font-size: 17px;
+            }
+
+            .page-header {
+                margin-top: 45px;
+            }
+
+            .page-header h1 {
+                font-size: 35px;
+            }
+
+            .page-header p {
+                font-size: 17px;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .why-video {
+                grid-template-columns: 1fr;
+            }
+
+            .notice,
+            .consider-list,
+            .video-box,
+            .process {
+                padding: 23px;
+            }
+
+            .video-button {
+                width: 100%;
+                max-width: 400px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img
+                src="images/logo.png"
+                alt="Capricorn Epoxy Enterprise"
+            >
+
+            <div>Capricorn Epoxy</div>
+            <div>Vanlalhmuaki</div>
+            <div>Epoxy Flooring Artist</div>
+
+        </div>
+
+
+        <div class="links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="flooring-rate.html">Flooring Rates</a>
+
+            <a href="epoxy-class.html">Epoxy Class</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================= -->
+
+    <div class="page-header">
+
+        <h1>
+            Flooring Rates
+        </h1>
+
+        <p>
+            Get a project-specific rate for your epoxy
+            flooring. We assess each project individually
+            instead of using a fixed per-square-foot rate.
+        </p>
+
+        <a
+            href="floor.html"
+            class="video-button"
+        >
+            📹 Send Your Floor Video / Video lo thawn rawh le
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         NO FIXED RATE
+    ========================= -->
+
+    <section class="section">
+
+        <div class="notice">
+
+            <h2>
+                No Fixed Per-Square-Foot Rate / Epoxy Flooring-ah Per-Square-Foot Rate kan hmang lo.
+            </h2>
+
+            <p>
+                <strong>
+                    We do not provide a fixed per-square-foot
+                    rate for epoxy flooring.
+                </strong>
+            </p>
+
+            <p>
+                Every project is different. The final cost
+                depends on the condition of the existing floor,
+                preparation work, materials, design, finish,
+                location, accessibility, and other project
+                requirements.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         HOW PRICING WORKS
+    ========================= -->
+
+    <section class="section">
+
+        <h2>
+            How Our Flooring Pricing Works
+        </h2>
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Send Your Floor Video / video lo thawn rawh le
+                </h3>
+
+                <p>
+                    Record a clear vertical 9:16 video
+                    showing your entire floor area. / Vertical 9:16 in i chhuat kha video in cover la, floor area kha chiang takin ti lang kim rawh le.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Our Team Analyses the Video / Video kha team lamin computer system hmangin an lo endik ang
+                </h3>
+
+                <p>
+                    Our team reviews the footage using
+                    our computer-based system to assess
+                    the floor condition and project details.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Project Assessment
+                </h3>
+
+                <p>
+                    We assess the preparation, materials,
+                    design, finish, location, and other
+                    requirements.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <h3>
+                    Receive Your Quotation
+                </h3>
+
+                <p>
+                    Our team contacts you through WhatsApp
+                    with the appropriate quotation. / Team lamin WhatsApp hmangin epoxy flooring rate kimchang an lo hrilh tawh ang che.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHAT WE CONSIDER
+    ========================= -->
+
+    <section class="section">
+
+        <h2>
+            What We Consider Before Giving a Quotation
+        </h2>
+
+        <div class="consider-list">
+
+            <ul>
+
+                <li>
+                    Existing floor condition
+                </li>
+
+                <li>
+                    Cracks, damage, or uneven surfaces
+                </li>
+
+                <li>
+                    Surface preparation requirements
+                </li>
+
+                <li>
+                    Floor size and layout
+                </li>
+
+                <li>
+                    Epoxy system required
+                </li>
+
+                <li>
+                    Design and finish
+                </li>
+
+                <li>
+                    Primer and material requirements
+                </li>
+
+                <li>
+                    Number of coats
+                </li>
+
+                <li>
+                    Location of the project
+                </li>
+
+                <li>
+                    Accessibility and site conditions
+                </li>
+
+                <li>
+                    Additional work required
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         VIDEO INSTRUCTIONS
+    ========================= -->
+
+    <section class="section">
+
+        <h2>
+            Before You Send Your Floor Video
+        </h2>
+
+        <div class="video-box">
+
+            <p>
+                To help our team analyse your project accurately,
+                please follow these instructions:
+            </p>
+
+            <ul>
+
+                <li>
+                    Hold your phone vertically (9:16).
+                </li>
+
+                <li>
+                    Record the entire floor area slowly.
+                </li>
+
+                <li>
+                    Make sure the floor is clearly visible.
+                </li>
+
+                <li>
+                    Show damaged, cracked, uneven, or wet areas.
+                </li>
+
+                <li>
+                    Avoid very dark or blurry footage.
+                </li>
+
+                <li>
+                    Record in good daylight whenever possible.
+                </li>
+
+                <li>
+                    Show the actual condition of the project area.
+                </li>
+
+            </ul>
+
+            <div class="video-warning">
+
+                <strong>
+                    Important:
+                </strong>
+
+                Please do not send edited or heavily filtered
+                videos. We need to see the actual condition of
+                the floor for our preliminary assessment.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHY VIDEO
+    ========================= -->
+
+    <section class="section">
+
+        <h2>
+            Why Do We Need Your Floor Video?
+        </h2>
+
+        <p>
+            Every flooring project is different. A video allows
+            our team to understand the actual condition of your
+            project before discussing the quotation.
+        </p>
+
+        <div class="why-video">
+
+            <div class="reason">
+                Existing floor condition
+            </div>
+
+            <div class="reason">
+                Cracks and damaged areas
+            </div>
+
+            <div class="reason">
+                Surface level and texture
+            </div>
+
+            <div class="reason">
+                Approximate floor layout
+            </div>
+
+            <div class="reason">
+                Preparation work required
+            </div>
+
+            <div class="reason">
+                Material requirements
+            </div>
+
+            <div class="reason">
+                Suitable epoxy system
+            </div>
+
+            <div class="reason">
+                Suitable finish and design
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHAT HAPPENS AFTER
+    ========================= -->
+
+    <section class="section">
+
+        <h2>
+            What Happens After You Submit
+        </h2>
+
+        <div class="process">
+
+
+            <div class="process-item">
+
+                <strong>
+                    01 — Video Received
+                </strong>
+
+                <span>
+                    Your floor video and project details
+                    are received by Capricorn Epoxy Enterprise.
+                </span>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <strong>
+                    02 — Video Analysis
+                </strong>
+
+                <span>
+                    Our team analyses the footage using
+                    our computer system to understand the
+                    floor condition and project requirements.
+                </span>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <strong>
+                    03 — Project Assessment
+                </strong>
+
+                <span>
+                    We assess preparation work, materials,
+                    design, finish, and other requirements.
+                </span>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <strong>
+                    04 — WhatsApp Contact
+                </strong>
+
+                <span>
+                    Our team contacts you through WhatsApp
+                    if additional information is required.
+                </span>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <strong>
+                    05 — Quotation
+                </strong>
+
+                <span>
+                    You receive a project-specific quotation
+                    based on the assessment.
+                </span>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <strong>
+                    06 — Booking
+                </strong>
+
+                <span>
+                    If you decide to proceed, you can confirm
+                    your project and schedule the work.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FINAL MESSAGE
+    ========================= -->
+
+    <section class="section">
+
+        <div class="notice">
+
+            <h2>
+                Every Project Is Different
+            </h2>
+
+            <p>
+                We assess each project individually to provide
+                a quotation based on its actual requirements.
+            </p>
+
+            <p>
+                For an accurate preliminary assessment,
+                please submit a clear vertical 9:16 video
+                of your floor.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SEND VIDEO BUTTON
+    ========================= -->
+
+    <div style="text-align: center; margin: 60px auto;">
+
+        <a
+            href="floor.html"
+            class="video-button"
+        >
+            📹 Send Your Floor Video
+        </a>
+
+    </div>
+
+
+
+    <!-- FINAL NOTE -->
+
+    <div class="final-note">
+
+        Final pricing may require additional information or
+        an on-site assessment when necessary.
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <strong>
+            Capricorn Epoxy Enterprise
+        </strong>
+
+        <br>
+
+        Professional Epoxy Flooring & Custom Designs
+
+        <br><br>
+
+        © 2026 Capricorn Epoxy Enterprise.
+        All rights reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
